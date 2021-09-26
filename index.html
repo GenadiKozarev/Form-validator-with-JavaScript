@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer src="index.js"></script>
+
+	<title>Form validation challenge</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Form validation challenge</h1>
+				<h3>Please start by clicking on the "Validate!" button to run the script</h3>
+				<form>
+					<div class="form-group">
+						<label>Required field:</label>
+						<input type="text" class="form-control" id="field1">
+						<span id="field1Error" class="error"></span>
+					</div>
+					<div class="form-group">
+						<label>Max length 8:</label>
+						<input type="text" class="form-control" id="field2">
+						<span id="field2Error" class="error"></span>
+					</div>
+					<div class="form-group">
+						<label>Required - Min length 10 - Max length 25:</label>
+						<input type="text" class="form-control" id="field3">
+						<span id="field3Error" class="error"></span>
+					</div>
+					<div class="form-group">
+						<label>Not required - Min length 10 - Max length 25:</label>
+						<input type="text" class="form-control" id="field4">
+						<span id="field4Error" class="error"></span>
+					</div>
+					<div class="form-group">
+						<label>Letters only:</label>
+						<input type="text" class="form-control" id="field5">
+						<span id="field5Error" class="error"></span>
+					</div>
+					<div class="form-group">
+						<strong>Not required:</strong><br>
+						<input type="radio" name="required" value="yes" id="yesChecked">
+						<label for="yesChecked">Yes</label>
+						<input type="radio" name="required" value="no" id="noChecked">
+						<label for="noChecked">No</label>
+					</div>
+					<div class="form-group">
+						<label>Required if above field is Yes:</label>
+						<input type="text" class="form-control" id="field6">
+						<span id="field6Error" class="error"></span>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-success" value="Validate!">
+					</div>
+					<div id="optional">
+						<h4>Optional</h4>
+						<div class="form-group">
+							<label>Valid email:</label>
+							<input type="text" class="form-control" id="field7">
+							<span id="field7Error" class="error"></span>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-success success" value="Looking good!">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
