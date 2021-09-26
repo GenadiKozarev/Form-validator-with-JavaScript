@@ -8,3 +8,5 @@ Built a form validator script that meets to following requirements:
 - Able to validate string lengths
 - Must display appropriate error messages and prevent form submission
 - No plugins! (including no jQuery)
+
+Live: https://2021-genadik.dev.io-academy.uk/Form%20validator%20%7c%20JavaScript/
